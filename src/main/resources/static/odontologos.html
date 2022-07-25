@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">        
+    </head>
+    <body>     
+        <div id="div-odontologos" class="seccion">
+            <button id="btn-inicio">Inicio</button>               
+            <h2>Clínica Odontológica DH - Odontologos</h2>
+            <!--
+            <h3>Buscar Odontologo</h3>            
+            <input type="text" placeholder="Buscar odontólogos">
+            -->
+            <h3>Agregar Nuevo Odontólogo</h3>            
+            <div id="div-nuevo-odontologo" class="oculto">
+                <form id="form-odontologo">
+                    <fieldset>
+                        <legend>Datos del odontólogo:</legend>                        
+                        <input id="inp-nombre-odontologo" type="text" placeholder="Nombre del Odontólogo">
+                        <input id="inp-apellido-odontologo" type="text" placeholder="Apellido del Odontólogo">
+                        <input id="inp-matricula-odontologo" type="text" placeholder="Matrícula del Odontólogo">
+                    </fieldset>
+                    <button type="submit" id="btn-guardar-odontologo">Enviar</button>
+                </form>
+            </div>            
+        </div>
+        <script src="js/odontologos.js"></script>             
+    </body>
+</html>

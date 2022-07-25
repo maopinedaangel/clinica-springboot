@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">          
+    </head>
+    <body>       
+        <div id="div-turnos" class="seccion">
+            <button id="btn-inicio">Inicio</button>             
+            <h2>Clínica Odontológica DH - Turnos</h2>
+            <!--
+            <h3>Consultar Turnos</h3>             
+            <input type="text" placeholder="Buscar turnos">
+            -->
+
+            <h3>Agregar Nuevo Turno</h3>            
+            <div id="div-nuevo-turno" class="oculto">
+                <form id="form-turno">
+                    <fieldset>
+                        <legend>Datos del Turno:</legend>                        
+                        <select id="sel-paciente" name="sel-paciente" id="sel-paciente">
+
+                        </select>
+                        <select id="sel-odontologo" name="sel-odontologo" id="sel-odontologo">
+
+                        </select>                        
+                        <input id="inp-fecha-turno" type="date" placeholder="Fecha del turno">
+                        <input id="inp-hora-turno" type="time" placeholder="Hora del turno">                        
+                    </fieldset>
+                    <button type="submit" id="btn-guardar-turno">Enviar</button>
+                </form>
+            </div>              
+        </div>         
+        <script src="js/turnos.js"></script>              
+    </body>
+</html>

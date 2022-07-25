@@ -1,0 +1,448 @@
+{
+	"info": {
+		"_postman_id": "d6447b84-7b6f-4235-88fe-ba56bafe11a3",
+		"name": "ClínicaDH",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13750974"
+	},
+	"item": [
+		{
+			"name": "ListarPacientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/pacientes",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarPaciente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/pacientes/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearPaciente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Martín\",\r\n    \"apellido\": \"Cáceres\",\r\n    \"dni\": \"70220115\",\r\n    \"email\": \"mcaceres@gmail.com\",\r\n    \"fechaDeIngreso\": \"2020-12-20\",\r\n    \"domicilio\": {\r\n        \"calle\": \"Alameda\",\r\n        \"numero\": 350,\r\n        \"localidad\": \"Medellín\",\r\n        \"provincia\": \"Antioquia\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/pacientes",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditarPaciente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"id\": 1,\r\n    \"nombre\": \"Mauricio\",\r\n    \"apellido\": \"Pineda\",\r\n    \"dni\": \"71264076\",\r\n    \"email\": \"ingmauriciopineda@gmail.com\",\r\n    \"fechaDeIngreso\": \"2020-01-20\",\r\n    \"domicilio\": {\r\n        \"calle\": \"Diagonal 75DD\",\r\n        \"numero\": 350,\r\n        \"localidad\": \"Medellín\",\r\n        \"provincia\": \"Antioquia\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/pacientes",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarPaciente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/pacientes/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarOdontologos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/odontologos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"odontologos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarOdontologo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/odontologos/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"odontologos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearOdontologo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Camilo\",\r\n    \"apellido\": \"Cifientes\",\r\n    \"matricula\": \"223344\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/odontologos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"odontologos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditarOdontologo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nombre\": \"Camilo\",\r\n    \"apellido\": \"Cifientes\",\r\n    \"matricula\": \"223344\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/odontologos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"odontologos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarOdontologo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/odontologos/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"odontologos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarTurnos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/turnos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"turnos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarTurnosPorPaciente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/pacientes/turnos/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"pacientes",
+						"turnos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarTurnosPorOdontologo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/odontologos/turnos/33",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"odontologos",
+						"turnos",
+						"33"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarTurno",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/turnos/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"turnos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearTurno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"pacienteId\": 3,\r\n    \"odontologoId\": 1,\r\n    \"fecha\": \"2022-09-10\",\r\n    \"hora\": \"10:15:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/turnos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"turnos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EditarTurno",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5,\r\n    \"pacienteId\": 22,\r\n    \"odontologoId\": 2,\r\n    \"fecha\": \"2022-07-20\",\r\n    \"hora\": \"15:00:00\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/turnos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"turnos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarTurno",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/turnos/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"turnos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

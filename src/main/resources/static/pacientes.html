@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    </head>
+    <body>
+
+        <div id="div-pacientes" class="seccion">
+            <button id="btn-inicio">Inicio</button>            
+            <h2>Clínica Odontológica DH - Pacientes</h2>
+            <!--
+            <h3>Buscar Paciente</h3>
+            <input type="text" placeholder="Buscar pacientes">
+            -->
+            <h3>Agregar Nuevo Paciente</h3>
+            <div id="div-nuevo-paciente">
+                <form id="form-paciente">
+                    <fieldset>
+                        <legend>Datos del paciente:</legend>                        
+                        <input id="inp-nombre-paciente" type="text" placeholder="Nombre del paciente">
+                        <input id="inp-apellido-paciente" type="text" placeholder="Apellido del paciente">
+                        <input id="inp-dni-paciente" type="text" placeholder="dni del paciente">
+                        <input id="inp-email-paciente" type="text" placeholder="e-mail del paciente">
+                        <input id="inp-fecha-ingreso-paciente" type="date" placeholder="Fecha de ingreso del paciente">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Domicilio:</legend>                         
+                        <input id="inp-calle" type="text" placeholder="Calle">
+                        <input id="inp-numero" type="text" placeholder="Número">
+                        <input id="inp-localidad" type="text" placeholder="Localidad">
+                        <input id="inp-provincia" type="text" placeholder="Provincia">                        
+                    </fieldset>
+                    <button type="submit" id="btn-guardar-paciente">Enviar</button>
+                </form>
+            </div>
+        </div>  
+        <script src="js/pacientes.js"></script>          
+    </body>
+</html>
